@@ -1,17 +1,36 @@
-# my_app_vainbender
+# Лабораторная работа №6. Flutter: самостоятельное приложение
 
-A new Flutter project.
+**Автор: Иванов Иван, группа ИС-241, дата сдачи: 15.10.2026**
+**Тема: Приложение показывает рандомную картинку медведя при нажатии на кнопку**
 
-## Getting Started
+## Стек и версии
+* Flutter 3.47.4
+* Dart 3.13.3
+* Платформа: Windows
+* IDE: VS Code
 
-This project is a starting point for a Flutter application.
+## Скриншот приложения
+![Приложение](img/step6_Vainbender.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Структура проекта
+* `lib/main.dart` — точка входа, настройка `MaterialApp` и `Scaffold`.
+* `lib/gradient_container.dart` — `StatelessWidget` для градиентного фона. Принимает три цвета через конструктор.
+* `lib/bear.dart` — `StatelessWidget` для отображения картинки. Принимает путь к изображению через конструктор.
+* `lib/bear_roller.dart` — `StatefulWidget` с логикой случайного выбора картинки и кнопкой.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Как запустить
+1. git clone <https://github.com/ArtemVay/Flutter_Lab5.git>
+2. cd <Documents/Flutter/ma_app_vainbender>
+3. flutter pub get
+4. flutter run -d windows
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Что изучили
+1. Закрепили создание собственных виджетов и разбивку их по отдельным файлам.
+2. Научились передавать данные через конструктор в `StatelessWidget`.
+3. Повторили работу с состоянием через `StatefulWidget` и `setState()`.
+4. Закрепили работу с ассетами (`assets`) и генерацией случайных чисел.
+5. Отработали построение дерева виджетов.
+
+## Ответы на вопросы
+
+Не нашёл их
